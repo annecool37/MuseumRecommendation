@@ -22,7 +22,7 @@ I LOVE MUSEUMS (and FOOD). But, sometimes it takes time to find the museums that
 - global.R, server.R, ui.R: Code for running Shiny app
 - get_sorted_suggestion.py: Compute consine similarity between selected museums with all other ~1600 museums and return sorted recommended musuems
 - "data" folder: stores files needed for operating the Shiny app
-  -  clean_category.json: {'museum': ['museum type 1','museum type 2', ...]}
+  -  clean_category.json: {'museum': ['museum type 1','museum type 2', ...]} with type 'Museums' being removed
   -  imputed_df_with_name.csv: master museum dataframe with ~220 features and ~1600 museums
   -  museum_img_link.json: {'museum name': 'img_link'}
   -  museum_types.json: {'museum type': ['museum 1', 'museum 2', ...]}
@@ -34,18 +34,17 @@ I LOVE MUSEUMS (and FOOD). But, sometimes it takes time to find the museums that
   - bootstrap.css: file to customize Shiny ui.R
 
 ### "Data" Folder
-Data scraped from tripadvisor  
-- tripadvisor_museum
-- traverler_type
-- traverler_rating
-- tag_clouds
-- review_quote
-- review_content
-- img_links
-- museum_categories  
-Files created by "Create_Files_For_Shiny.ipynb" 
-- museum_types
-- museum_tags
+Data scraped from tripadvisor (US/World)
+- tripadvisor_museum: general museum data scraped from TripAdvisor
+- traverler_type: {'Museum': ['Families','Couples','Solo','Business','Friends']}
+- traverler_rating: {'Museum': ['Excellent','Very good','Average','Poor','Terrible']}
+- tag_clouds: {'museum': ['tag 1', 'tag 2', 'tag 3' ...]}
+- review_quote: {'museum': ['quote 1', 'quote 2', ... ,'quote 10']}
+- review_content:  {'museum': ['review 1', 'review 2', ... ,'review 10']}
+- img_links: {'museum name': 'img_link'}
+- museum_categories: {'museum': ['museum type 1','museum type 2', ...]}
+File created by "Create_Files_For_Shiny.ipynb" (other ones are placed in ./app/data)
+- museum_tags: {'museum tag': ['museum 1', 'museum 2', ...]}
 File downloaded onine
 - states.csv: full and abbreviation state name
 
