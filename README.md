@@ -2,7 +2,8 @@
 Anne Chen  
 2016  
 
-App: http://216.230.228.88:3838/bootcamp006_project/Project5-Capstone/Museo/app/
+App: http://216.230.228.88:3838/bootcamp006_project/Project5-Capstone/Museo/app/  
+Blog: http://blog.nycdatascience.com/student-works/museo-recommendation-system-museum-selection/
 
 ### Intro
 I LOVE MUSEUMS (and FOOD). But, sometimes it takes time to find the museums that meet my interest. So, I created an application aiming to recommend museums based on users' preferences and to allow users to filter the musuems that match their needs.
